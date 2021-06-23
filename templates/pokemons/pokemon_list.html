@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="pokemons">
+        <div class="pokemons__item">
+            {% for pokemon in pokemons %}
+                <img class="pokemons__image" src="{{ pokemon.pokemon_image_url }}" alt="pokemon image">
+                <p class="pokemons__name">{{ pokemon.pokemon_name }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
