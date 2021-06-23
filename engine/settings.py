@@ -127,6 +127,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# STATIC_ROOT = "C:\main\web\pokemon-api\static"
+
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
